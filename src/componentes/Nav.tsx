@@ -1,7 +1,7 @@
 export default function Nav() {
   return (
     <nav className="flex flex-col space-y-3 ">
-      <a href="/https://github.com/sergio088" className="flex space-x-2">
+      <a href="https://github.com/sergio088" className="flex space-x-2">
         <svg
           role="img"
           viewBox="0 0 24 24"
@@ -14,7 +14,7 @@ export default function Nav() {
         <span className="text-slate-500 ">Git Hub</span>
       </a>
       <a
-        href="/https://www.linkedin.com/in/sergio-santos-4b4666373/"
+        href="https://www.linkedin.com/in/sergio-santos-4b4666373/"
         className="flex space-x-2"
       >
         <svg
