@@ -3,32 +3,45 @@ import Starfild from "@/componentes/starfild";
 import T1 from "@/componentes/T1";
 import T2 from "@/componentes/T2";
 import Nav from "@/componentes/Nav";
+import L from "@/componentes/LinksHeader";
 
 export default function Home() {
   return (
-    <div className="relative z-0 mx-auto min-h-screen max-w-screen-x1 px-6 py-12 font-sans lg:py-0 ">
+    <div className="relative z-0 mx-auto min-h-screen max-w-screen-x1 px-6 py-12 font-sans lg:px-16 lg:py-0 md:px-12 md:py-16 ">
       <SpaceBackground />
       <Starfild />
       <div className="lg:flex lg:justify-between lg:gap-4">
-        <header className="space-y-4 flex flex-col justify-between lg:py-24 lg:top-0 lg:w-[48%] ">
+        <header
+          className="lg:sticky lg:flex lg:flex-col lg:max-h-screen
+         space-y-4 justify-between pb-5 lg:py-24 lg:top-0 lg:w-[48%]  "
+        >
           <div className="space-y-4 ">
-            <h1 className="text-slate-200 font-bold text-4xl ">
+            <h1 className="text-slate-200 font-bold text-4xl tracking-tight sm:text-5xl">
               Sergio Santos
             </h1>
             <div>
-              <h2 className="text-slate-200 text-[20px]">
+              <h2 className="text-slate-200 text-lg tracking-tight font-medium sm:text-xl">
                 Full Stack Developer
               </h2>
             </div>
-            <T2>
-              Especializado em criar acessiveiz e perfeitas experiencias
-              digitais para a web
-            </T2>
+            <div>
+              <p className="text-slate-400 max-w-xs ">
+                Desenvolvo aplicações web completas com foco em performance,
+                acessibilidade e boa experiência de uso.
+              </p>
+            </div>
           </div>
+          <nav>
+            <div className="hidden lg:flex lg:flex-col">
+              <L id="#about">About</L>
+              <L id="#tecnologias">Tecnologias</L>
+              <L id="#projetos">Projetos</L>
+            </div>
+          </nav>
           <Nav />
         </header>
-        <main className="lg:w-[52%] lg:py-24 ">
-          <section id="about">
+        <main className="lg:w-[52%] lg:py-24 space-y-14 ">
+          <section id="about" className="scroll-mt-24">
             <div className="space-y-10 ">
               <T1>Sobre mim</T1>
               <T2>
@@ -61,6 +74,16 @@ export default function Home() {
                 sentido 🌌. Se quiser trocar uma ideia, criar algo junto ou só
                 bater um papo, tô por aqui. Bora? 💬✨
               </T2>
+            </div>
+          </section>
+          <section id="tecnologias" className=" flex items-center h-screen">
+            <div className="mt-50">
+              <T2>Em desemvolvimento...</T2>
+            </div>
+          </section>
+          <section id="projetos" className=" flex items-center h-screen ">
+            <div className="">
+              <T2>Em desemvolvimento...</T2>
             </div>
           </section>
         </main>

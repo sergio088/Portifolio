@@ -8,10 +8,10 @@ export default function Starfild() {
   useEffect(() => {
     const tempStars = [];
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 300; i++) {
       tempStars.push({
         x: Math.floor(Math.random() * window.innerWidth),
-        y: Math.floor(Math.random() * window.innerHeight),
+        y: Math.floor(Math.random() * document.body.scrollHeight),
       });
     }
 
