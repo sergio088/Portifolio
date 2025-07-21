@@ -11,7 +11,6 @@ export default function L({ children, id }: props) {
   const sessao = Observer();
   const isActive = `#${sessao}` === id;
 
-  console.log(isActive);
   return (
     <a href={id} className="flex items-center group py-3 active">
       <span

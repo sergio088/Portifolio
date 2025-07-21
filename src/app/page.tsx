@@ -4,6 +4,7 @@ import T1 from "@/componentes/T1";
 import T2 from "@/componentes/T2";
 import Nav from "@/componentes/Nav";
 import L from "@/componentes/LinksHeader";
+import Cardskills from "@/componentes/cardSkills";
 
 export default function Home() {
   return (
@@ -16,11 +17,11 @@ export default function Home() {
          space-y-4 justify-between pb-5 lg:py-24 lg:top-0 lg:w-[48%]  "
         >
           <div className="space-y-4 ">
-            <h1 className="text-slate-200 font-bold text-4xl tracking-tight sm:text-5xl">
+            <h1 className="text-violet-700 font-bold text-4xl tracking-tight sm:text-5xl">
               Sergio Santos
             </h1>
             <div>
-              <h2 className="text-slate-200 text-lg tracking-tight font-medium sm:text-xl">
+              <h2 className="text-violet-500 text-lg tracking-tight font-medium sm:text-xl">
                 Full Stack Developer
               </h2>
             </div>
@@ -34,14 +35,14 @@ export default function Home() {
           <nav>
             <div className="hidden lg:flex lg:flex-col">
               <L id="#about">About</L>
-              <L id="#tecnologias">Tecnologias</L>
+              <L id="#skills">Skills</L>
               <L id="#projetos">Projetos</L>
             </div>
           </nav>
           <Nav />
         </header>
-        <main className="lg:w-[52%] lg:py-24 space-y-14 ">
-          <section id="about" className="scroll-mt-24">
+        <main className="lg:w-[52%] lg:py-24  ">
+          <section id="about" className="scroll-mt-24 mb-24">
             <div className="space-y-10 ">
               <T1>Sobre mim</T1>
               <T2>
@@ -76,14 +77,125 @@ export default function Home() {
               </T2>
             </div>
           </section>
-          <section id="tecnologias" className=" flex items-center h-screen">
-            <div className="mt-50">
-              <T2>Em desemvolvimento...</T2>
+          <section id="skills" className="flex h-screen scroll-mt-24 mb-40">
+            <div className="flex flex-col w-full  ">
+              <T1>Skills</T1>
+              <Cardskills
+                img={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="lucide lucide-chevrons-left-right-icon lucide-chevrons-left-right"
+                  >
+                    <path d="m9 7-5 5 5 5" />
+                    <path d="m15 7 5 5-5 5" />
+                  </svg>
+                }
+                t="Languages"
+                c={["Java Script", "Type Script"]}
+              />
+              <Cardskills
+                img={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="lucide lucide-globe-icon lucide-globe"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                    <path d="M2 12h20" />
+                  </svg>
+                }
+                t="Frontend"
+                c={["NextJS", "ReactJS", "TailwindCSS"]}
+              />
+              <Cardskills
+                img={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="text-slate-100"
+                  >
+                    <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                    <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                    <line x1="6" x2="6.01" y1="6" y2="6" />
+                    <line x1="6" x2="6.01" y1="18" y2="18" />
+                  </svg>
+                }
+                t="Backend"
+                c={["NodeJS", "ExpressJS", "FastAPI"]}
+              />
+              <Cardskills
+                img={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="lucide lucide-database-icon lucide-database"
+                  >
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+                    <path d="M3 12A9 3 0 0 0 21 12" />
+                  </svg>
+                }
+                t="Databases"
+                c={["MySQL", "PostGree", "MongoDB"]}
+              />
+              <Cardskills
+                img={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="lucide lucide-computer-icon lucide-computer"
+                  >
+                    <rect width="14" height="8" x="5" y="2" rx="2" />
+                    <rect width="20" height="8" x="2" y="14" rx="2" />
+                    <path d="M6 18h2" />
+                    <path d="M12 18h6" />
+                  </svg>
+                }
+                t="Cloud & DevOps Tools"
+                c={["Git", "GitHub", "VS Code", "Docker"]}
+              />
             </div>
           </section>
-          <section id="projetos" className=" flex items-center h-screen ">
+          <section id="projetos" className=" flex scroll-mt-24 h-screen ">
             <div className="">
-              <T2>Em desemvolvimento...</T2>
+              <T1>Projetos</T1>
             </div>
           </section>
         </main>
