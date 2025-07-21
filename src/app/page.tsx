@@ -195,15 +195,28 @@ export default function Home() {
             </div>
           </section>
           <section id="projetos" className=" flex scroll-mt-24  ">
-            <div className="w-full lg:w-1/2">
+            <div className="w-full ">
               <T1>Projetos</T1>
-              <div className="flex flex-col lg:flex-row">
+              <div className="flex flex-col lg:flex-row w-full space-x-5 space-y-5 lg:space-y-0">
                 <Cardprojetos
                   img="/ProjetoSaaS.png"
-                  tec={["Next.JS", "Type Script", "Node.JS", "PostgreSQL"]}
+                  tec={[
+                    "Next.JS",
+                    "Type Script",
+                    "Node.JS",
+                    "PostgreSQL",
+                    "TailwindCSS",
+                  ]}
                   t="SaaS Inventory"
                   git="https://github.com/sergio088/saas"
                   live="https://saas-flame-chi.vercel.app/"
+                />
+                <Cardprojetos
+                  img="/Portifolio pronto.png"
+                  tec={["Next.JS", "Type Script", "TailwindCSS"]}
+                  t="Portifolio"
+                  git="https://github.com/sergio088/Portifolio"
+                  live="https://portifolio-rho-bice.vercel.app/"
                 />
               </div>
             </div>
