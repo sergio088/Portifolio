@@ -5,6 +5,7 @@ import T2 from "@/componentes/T2";
 import Nav from "@/componentes/Nav";
 import L from "@/componentes/LinksHeader";
 import Cardskills from "@/componentes/cardSkills";
+import Cardprojetos from "@/componentes/cardProjetos";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <div className="lg:flex lg:justify-between lg:gap-4">
         <header
           className="lg:sticky lg:flex lg:flex-col lg:max-h-screen
-         space-y-4 justify-between pb-5 lg:py-24 lg:top-0 lg:w-[48%]  "
+         space-y-4 justify-between pb-5 lg:py-24 lg:top-0 lg:w-[35%]  "
         >
           <div className="space-y-4 ">
             <h1 className="text-violet-700 font-bold text-4xl tracking-tight sm:text-5xl">
@@ -41,7 +42,7 @@ export default function Home() {
           </nav>
           <Nav />
         </header>
-        <main className="lg:w-[52%] lg:py-24  ">
+        <main className="lg:w-[65%] lg:py-24 min-h-screen ">
           <section id="about" className="scroll-mt-24 mb-24">
             <div className="space-y-10 ">
               <T1>Sobre mim</T1>
@@ -77,7 +78,7 @@ export default function Home() {
               </T2>
             </div>
           </section>
-          <section id="skills" className="flex h-screen scroll-mt-24 mb-40">
+          <section id="skills" className="flex  scroll-mt-24 mb-24">
             <div className="flex flex-col w-full  ">
               <T1>Skills</T1>
               <Cardskills
@@ -89,9 +90,9 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="lucide lucide-chevrons-left-right-icon lucide-chevrons-left-right"
                   >
                     <path d="m9 7-5 5 5 5" />
@@ -110,9 +111,9 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="lucide lucide-globe-icon lucide-globe"
                   >
                     <circle cx="12" cy="12" r="10" />
@@ -132,9 +133,9 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="text-slate-100"
                   >
                     <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
@@ -155,9 +156,9 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="lucide lucide-database-icon lucide-database"
                   >
                     <ellipse cx="12" cy="5" rx="9" ry="3" />
@@ -177,9 +178,9 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="lucide lucide-computer-icon lucide-computer"
                   >
                     <rect width="14" height="8" x="5" y="2" rx="2" />
@@ -193,9 +194,18 @@ export default function Home() {
               />
             </div>
           </section>
-          <section id="projetos" className=" flex scroll-mt-24 h-screen ">
-            <div className="">
+          <section id="projetos" className=" flex scroll-mt-24  ">
+            <div className="w-full lg:w-1/2">
               <T1>Projetos</T1>
+              <div className="flex flex-col lg:flex-row">
+                <Cardprojetos
+                  img="/ProjetoSaaS.png"
+                  tec={["Next.JS", "Type Script", "Node.JS", "PostgreSQL"]}
+                  t="SaaS Inventory"
+                  git="https://github.com/sergio088/saas"
+                  live="https://saas-flame-chi.vercel.app/"
+                />
+              </div>
             </div>
           </section>
         </main>
