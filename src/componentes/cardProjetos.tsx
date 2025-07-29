@@ -7,7 +7,17 @@ interface props {
   tec: string[];
   live: string;
 }
-
+/*
+  Sugestões de melhorias para este arquivo:
+  - Renomear a interface 'props' para 'CardProjetosProps' para seguir convenções.
+  - Validar URLs recebidas (git, live) para evitar links inválidos.
+  - Adicionar 'target="_blank"' e 'rel="noopener noreferrer"' nos links externos.
+  - Permitir alt dinâmico para a imagem, tornando o componente mais acessível.
+  - Usar PascalCase para o nome do componente: 'CardProjetos'.
+  - Adicionar PropTypes ou validação extra se for usado fora do TypeScript.
+  - Considerar animações ou feedback visual nos botões.
+  - Adicionar testes unitários para garantir funcionamento.
+*/
 export default function Cardprojetos({ img, t, git, tec, live }: props) {
   return (
     <div

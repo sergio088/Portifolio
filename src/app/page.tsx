@@ -231,6 +231,13 @@ export default function Home() {
                   git=""
                   live="https://n8n-front.vercel.app/"
                 />
+                <Cardprojetos
+                  img="/Jogodavelha.png"
+                  tec={["Next.JS", "Type Script", "TailwindCSS"]}
+                  t="Jogo da velha"
+                  git="https://github.com/sergio088/Jogo-da-velha"
+                  live="https://jogo-da-velha-sandy-one.vercel.app/"
+                />
               </div>
             </div>
           </section>
