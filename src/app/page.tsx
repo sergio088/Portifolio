@@ -197,7 +197,7 @@ export default function Home() {
           <section id="projetos" className=" flex scroll-mt-24  ">
             <div className="w-full ">
               <T1>Projetos</T1>
-              <div className="flex flex-col lg:flex-row w-full space-x-5 space-y-5 lg:space-y-0">
+              <div className="flex flex-col sm:grid sm:grid-cols-2 sm:gap-3 w-full space-x-5 space-y-5 lg:space-y-0">
                 <Cardprojetos
                   img="/ProjetoSaaS.png"
                   tec={[
@@ -217,6 +217,19 @@ export default function Home() {
                   t="Portifolio"
                   git="https://github.com/sergio088/Portifolio"
                   live="https://portifolio-rho-bice.vercel.app/"
+                />
+                <Cardprojetos
+                  img="/FrontN8N.png"
+                  tec={[
+                    "Next.JS",
+                    "Type Script",
+                    "TailwindCSS",
+                    "Api REST",
+                    "Vercel",
+                  ]}
+                  t="Projeto desenvolvido sob demanda para integração com automações no n8n"
+                  git=""
+                  live="https://n8n-front.vercel.app/"
                 />
               </div>
             </div>

@@ -11,7 +11,7 @@ interface props {
 export default function Cardprojetos({ img, t, git, tec, live }: props) {
   return (
     <div
-      className="border border-violet-500 rounded  w-full group hover:shadow-xl "
+      className="border sm:mb-5 border-violet-500 rounded  w-full group hover:shadow-xl "
       style={{ boxShadow: "0 4px 20px rgba(139, 92, 246, 0.5)" }}
     >
       <div className=" rounded rounded-b-none relative w-full h-48 overflow-hidden">
