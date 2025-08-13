@@ -233,10 +233,18 @@ export default function Home() {
                 />
                 <Cardprojetos
                   img="/Jogodavelha.png"
-                  tec={["Next.JS", "Type Script", "TailwindCSS"]}
-                  t="Jogo da velha"
+                  tec={["Next.JS", "TypeScript", "TailwindCSS"]}
+                  t="Versão interativa do clássico Jogo da Velha, desenvolvida para praticar gerenciamento de estados, lógica condicional e renderização dinâmica no React."
                   git="https://github.com/sergio088/Jogo-da-velha"
                   live="https://jogo-da-velha-sandy-one.vercel.app/"
+                />
+
+                <Cardprojetos
+                  img="/SnakeGame.png"
+                  tec={["Next.JS", "TypeScript", "TailwindCSS", "Canvas API"]}
+                  t="Jogo da cobrinha desenvolvido para estudar manipulação de arrays, otimização de renderização e lógica de game loop com requestAnimationFrame."
+                  git="https://github.com/sergio088/SnakeGame"
+                  live="https://snake-game-kohl-one.vercel.app/"
                 />
               </div>
             </div>
