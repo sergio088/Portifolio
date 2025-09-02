@@ -228,6 +228,7 @@ export default function Home() {
                     "Vercel",
                   ]}
                   t="Projeto desenvolvido sob demanda para integração com automações no n8n"
+                  job={true}
                   git=""
                   live="https://n8n-front.vercel.app/"
                 />
@@ -245,6 +246,14 @@ export default function Home() {
                   t="Jogo da cobrinha desenvolvido para estudar manipulação de arrays, otimização de renderização e lógica de game loop com requestAnimationFrame."
                   git="https://github.com/sergio088/SnakeGame"
                   live="https://snake-game-kohl-one.vercel.app/"
+                />
+                <Cardprojetos
+                  img="/Eduq-play-and-learn.png"
+                  tec={["Next.JS", "TypeScript", "TailwindCSS", "Vercel"]}
+                  t="Site infantil, de jogo da memoria para estimular o aprendizado e a memoria"
+                  job={true}
+                  git="https://github.com/sergio088"
+                  live="https://eduq-play-and-learn.vercel.app/"
                 />
               </div>
             </div>

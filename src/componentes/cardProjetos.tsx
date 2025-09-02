@@ -6,6 +6,7 @@ interface props {
   git: string;
   tec: string[];
   live: string;
+  job?: boolean;
 }
 /*
   Sugestões de melhorias para este arquivo:
@@ -18,7 +19,7 @@ interface props {
   - Considerar animações ou feedback visual nos botões.
   - Adicionar testes unitários para garantir funcionamento.
 */
-export default function Cardprojetos({ img, t, git, tec, live }: props) {
+export default function Cardprojetos({ img, t, git, tec, live, job }: props) {
   return (
     <div
       className="border sm:mb-5 border-violet-500 rounded  w-full group hover:shadow-xl "
@@ -46,6 +47,13 @@ export default function Cardprojetos({ img, t, git, tec, live }: props) {
         </div>
         <div className="space-y-3">
           <h1 className="text-slate-200 font-bold">{t}</h1>
+          <h1
+            className={` ${
+              job ? "" : "hidden"
+            } border border-transparent bg-gradient-to-r from-green-500 to-violet-500  text-white w-fit rounded-2xl px-2 font-semibold`}
+          >
+            Projeto Remunerado
+          </h1>
           <div className="space-x-5 text-slate-400 flex">
             <a href={git} className="hover:text-violet-500 flex">
               <svg
