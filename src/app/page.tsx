@@ -255,6 +255,20 @@ export default function Home() {
                   git="https://github.com/sergio088"
                   live="https://eduq-play-and-learn.vercel.app/"
                 />
+                <Cardprojetos
+                  img="/Tetris.png"
+                  tec={[
+                    "Next.JS",
+                    "TypeScript",
+                    "TailwindCSS",
+                    "Vercel",
+                    "Canvas API",
+                  ]}
+                  t="Jogo Tetris desenvolvido para estudar manipulaçao de arrays"
+                  job={false}
+                  git="https://github.com/sergio088/Tetris"
+                  live="https://tetris-two-pi.vercel.app/"
+                />
               </div>
             </div>
           </section>
