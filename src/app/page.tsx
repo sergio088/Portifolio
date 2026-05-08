@@ -6,6 +6,7 @@ import Nav from "@/componentes/Nav";
 import L from "@/componentes/LinksHeader";
 import Cardskills from "@/componentes/cardSkills";
 import Cardprojetos from "@/componentes/cardProjetos";
+import CardBot from "@/componentes/CardBot";
 
 export default function Home() {
   return (
@@ -198,6 +199,12 @@ export default function Home() {
             <div className="w-full ">
               <T1>Projetos</T1>
               <div className="flex flex-col sm:grid sm:grid-cols-2 sm:gap-3 w-full space-x-5 space-y-5 lg:space-y-0">
+                <CardBot
+                  video="/videos/bot-n8n.mp4"
+                  t="WhatsApp Order Bot — n8n"
+                  git="https://github.com/sergio088/whatsapp-order-bot-n8n"
+                  tec={["n8n", "WAHA", "OpenAI", "Docker"]}
+                />
                 <Cardprojetos
                   img="/ProjetoSaaS.png"
                   tec={[
